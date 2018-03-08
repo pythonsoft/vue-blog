@@ -7,12 +7,12 @@ import Topic from './topic';
 
 const routes = [
   {
-    path: '/hello',
-    component: App
+    path: '/',
+    redirect: '/home'
   },
   {
-    path: '/home',
-    component: Home
+    path: '/hello',
+    component: App
   },
   {
     path: '/archive',
