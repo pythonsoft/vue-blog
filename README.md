@@ -1,6 +1,6 @@
-# vue-tetris-copy
+# vue-blog
 
-> vue-tetris-copy
+> vue-blog
 
 ## Build Setup
 
