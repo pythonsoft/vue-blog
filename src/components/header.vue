@@ -103,7 +103,7 @@ export default {
     .profile-nav {
         float: none;
         margin-top: 15px;
-        margin-left: 0;
+        margin-left: -40px;
     }
     .profile-nav ul li {
         display: block;
