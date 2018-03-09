@@ -12,6 +12,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname)));
 
+app.use(function(req, res, next) {
+  if(path.extname(req.path)) {
+    next();
+  }else {
+    res.sendfile(path.resolve(__dirname, 'index.html'));
+  }
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

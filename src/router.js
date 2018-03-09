@@ -8,27 +8,34 @@ import Topic from './topic';
 const routes = [
   {
     path: '/',
-    redirect: '/home'
-  },
-  {
-    path: '/hello',
-    component: App
-  },
-  {
-    path: '/archive',
-    component: Archive
-  },
-  {
-    path: '/about',
-    component: About
-  },
-  {
-    path: '/article',
-    component: Article
-  },
-  {
-    path: '/topic',
-    component: Topic
+    redirect: '/home',
+    component: Home,
+    children: [
+      {
+        path: 'home',
+        component: Home
+      },
+      {
+        path: 'hello',
+        component: App
+      },
+      {
+        path: 'archive',
+        component: Archive
+      },
+      {
+        path: 'about',
+        component: About
+      },
+      {
+        path: 'article',
+        component: Article
+      },
+      {
+        path: 'topic',
+        component: Topic
+      }
+    ]
   }
 ];
 
